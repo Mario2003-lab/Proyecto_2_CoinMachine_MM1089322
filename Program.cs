@@ -62,6 +62,8 @@ namespace Proyecto_2_CoinMachine_MM1089322
             else
             {
                 Console.WriteLine("El jugador no tiene la edad requerida para jugar (21 años)...");
+                Console.ReadLine();
+                Environment.Exit(0);
             }
 
             // ASCII
@@ -179,9 +181,11 @@ namespace Proyecto_2_CoinMachine_MM1089322
 
             Console.Write("\nDesea continuar y apostar? (Si/No): ");
             string respuesta2 = Console.ReadLine();
+            Console.Clear();
 
             if (respuesta2 == "Si" || respuesta2 == "si")
             {
+               
 
                 // Probabilidades de aparición de cada ícono
                 double probabilidadTrebol = (10.00/100);
@@ -270,19 +274,16 @@ namespace Proyecto_2_CoinMachine_MM1089322
                     if (cantidadBomba>0)
                         montoCalculado = 0;
 
-                    Console.WriteLine($"Dinero obtenido {montoCalculado}");
+                    Console.WriteLine($"monto total: {montoCalculado}");
 
-                    Console.WriteLine("Desea apostar las ganancias obtenidas? (Si/No): ");
+                    Console.WriteLine("Desea apostar su monto total? (Si/No): ");
                     respuesta3 = Console.ReadLine();
+                    
 
                     monto = montoCalculado;
                 }
 
-                //efecto final sobre el monto inicial
-
-
-
-
+                
                 Console.Clear();
 
                 //mostrar informacion personal del jugador (Nombre, id, nacionalidad y edad) + las ganancias acumuladas con el impuesto del 40%
@@ -290,7 +291,7 @@ namespace Proyecto_2_CoinMachine_MM1089322
                 Console.WriteLine("Nombre: " + jugador.NombreCompleto);
                 Console.WriteLine("ID: " + jugador.NumeroIdentificacion);
                 Console.WriteLine("Nacionalidad: " + jugador.Nacionalidad);
-                Console.WriteLine("Edad: " + jugador.Edad + "años");
+                Console.WriteLine("Edad: " + jugador.Edad + " años");
 
                 Console.WriteLine("Ganancias acumuladas (Q): " + montoCalculado); //Ganancias acumuladas
 
