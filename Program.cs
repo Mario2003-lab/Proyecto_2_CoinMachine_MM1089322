@@ -115,10 +115,24 @@ namespace Proyecto_2_CoinMachine_MM1089322
                 //tarjeta
                 if (metodoPago == "Tarjeta" || metodoPago == "tarjeta")
                 {
-                    Console.Write("\nIngrese el monto a apostar(Q): ");
-                    monto = decimal.Parse(Console.ReadLine());
+                    if (metodoPago == "Tarjeta" || metodoPago == "tarjeta")
+                    {
+                        Console.Write("\nIngrese el monto a apostar(Q): ");
+                        monto = decimal.Parse(Console.ReadLine());
+                    }
+                    else
+                    {
+                        Console.WriteLine("Monto inválido");
+                        Console.ReadLine();
+                        Environment.Exit(0);
 
-                    Console.Write("\nIngrese el número de la tarjeta de crédito (16 dígitos): ");
+                    }
+                
+
+                    
+                    
+
+                    Console.Write("\nIngrese el número de la tarjeta de crédito  (16 dígitos): ");
                     string numTarjeta = Console.ReadLine();
 
                     if (numTarjeta.Length == 16 && numTarjeta.All(char.IsDigit))
@@ -126,7 +140,7 @@ namespace Proyecto_2_CoinMachine_MM1089322
                         Console.Write("\nIngrese el nombre del titular de la tarjeta: ");
                         string nombreTitular = Console.ReadLine();
 
-                        Console.Write("\nIngrese la fecha de expiración de la tarjeta (mes/año): ");
+                        Console.Write("\nIngrese la fecha de expiración de la tarjeta (mes/año (2 dígitos)): ");
                         string fechaExpiracion = Console.ReadLine();
 
                         // comprobación fecha expiración de tarjeta
@@ -161,7 +175,7 @@ namespace Proyecto_2_CoinMachine_MM1089322
                 }
 
                 //efectivo
-                else if (metodoPago == "Efectivo" || metodoPago == "efectivo")
+                if (metodoPago == "Efectivo" || metodoPago == "efectivo")
                 {
                     Console.WriteLine("El método de pago seleccionado es: " + metodoPago);
 
@@ -170,17 +184,13 @@ namespace Proyecto_2_CoinMachine_MM1089322
 
                     Console.WriteLine("Monto a apostar(Q): " + monto);
                 }
-                else
-                {
-                    Console.WriteLine("Método de pago inválido.");
-                    Console.ReadLine();
-                    Environment.Exit(0);
-                }
+                
             }
 
             else
             {
                 Console.WriteLine("Cerrando programa");
+                Console.ReadLine();
                 Environment.Exit(0);
             }
 
