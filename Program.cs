@@ -87,15 +87,15 @@ namespace Proyecto_2_CoinMachine_MM1089322
                 "\nSi al usuario le aparece dicho elemento perderá toda su apuesta sin importar las otras figuras.");
 
             Console.WriteLine(
-                "\na. Probabilidad de obtener el 1000% de la apuesta:  \r" +
+                "\na. Probabilidad de obtener el 1000% de la apuesta: 0.00256% \r" +
 
-                "\nb. Probabilidad de duplicar la apuesta:\r" +
+                "\nb. Probabilidad de duplicar la apuesta:  \r" +
 
-                "\nc. Probabilidad de obtener de regreso su apuesta:\r" +
+                "\nc. Probabilidad de obtener de regreso su apuesta: 2.56% \r" +
 
-                "\nd. Probabilidad de perder la mitad de su apuesta:\r" +
+                "\nd. Probabilidad de perder la mitad de su apuesta:  \r" +
 
-                "\ne. Probabilidad de perder toda su apuesta: \r\n");
+                "\ne. Probabilidad de perder toda su apuesta: 1%\r\n");
 
 
             Console.Write("\nDesea continuar? (Si/No): ");
