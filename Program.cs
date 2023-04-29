@@ -152,7 +152,7 @@ namespace Proyecto_2_CoinMachine_MM1089322
                     else
                     {
                         Console.WriteLine("El número de tarjeta ingresado es inválido.");
-                      
+                        Console.ReadLine();
                         //esta seccion debería reenviar a un menú para reingresar los datos
 
                         Environment.Exit(0);
@@ -173,6 +173,7 @@ namespace Proyecto_2_CoinMachine_MM1089322
                 else
                 {
                     Console.WriteLine("Método de pago inválido.");
+                    Console.ReadLine();
                     Environment.Exit(0);
                 }
             }
@@ -313,6 +314,7 @@ namespace Proyecto_2_CoinMachine_MM1089322
             {
 
                 Console.WriteLine("Cerrando programa");
+                Console.ReadLine();
                 Environment.Exit(0);
 
             }
