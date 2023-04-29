@@ -1,0 +1,5 @@
+﻿Operación Compilar iniciada..
+1>------ Operación Compilar iniciada: Proyecto: Proyecto_2_CoinMachine_MM1089322, configuración: Debug Any CPU ------
+1>  Proyecto_2_CoinMachine_MM1089322 -> C:\Users\mario\OneDrive\Documentos\Progra (LAB09)\Proyecto_2_CoinMachine_MM1089322\bin\Debug\Proyecto_2_CoinMachine_MM1089322.exe
+========== Compilación: 1 correcto, 0 erróneo, 0 actualizado, 0 omitido ==========
+========= Compilar se inició en 3:44 PM y tomó 00.272 segundos ==========
