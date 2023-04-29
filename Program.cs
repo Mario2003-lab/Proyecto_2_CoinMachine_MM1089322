@@ -89,11 +89,11 @@ namespace Proyecto_2_CoinMachine_MM1089322
             Console.WriteLine(
                 "\na. Probabilidad de obtener el 1000% de la apuesta: 0.00256% \r" +
 
-                "\nb. Probabilidad de duplicar la apuesta:  \r" +
+                "\nb. Probabilidad de duplicar la apuesta: 31% \r" +
 
                 "\nc. Probabilidad de obtener de regreso su apuesta: 2.56% \r" +
 
-                "\nd. Probabilidad de perder la mitad de su apuesta:  \r" +
+                "\nd. Probabilidad de perder la mitad de su apuesta: 3% \r" +
 
                 "\ne. Probabilidad de perder toda su apuesta: 1%\r\n");
 
