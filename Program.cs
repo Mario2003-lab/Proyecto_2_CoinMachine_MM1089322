@@ -152,8 +152,12 @@ namespace Proyecto_2_CoinMachine_MM1089322
                     else
                     {
                         Console.WriteLine("El número de tarjeta ingresado es inválido.");
+                      
+                        //esta seccion debería reenviar a un menú para reingresar los datos
+
                         Environment.Exit(0);
                     }
+
                 }
 
                 //efectivo
